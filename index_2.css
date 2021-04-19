@@ -1,0 +1,58 @@
+body {
+    margin: 30px;
+}
+ 
+.my-container {
+    border: 1px solid rgba(247, 221, 221, 0.837);
+    height:200vhs;
+    display: table;
+    
+}
+.row {
+    justify-content: center;
+}
+.row h2 {
+    justify-content: center;
+    margin:20px;
+}
+.header h1 {
+    margin-top: 10px;
+    font-family: Work Sans, sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    background-color: #f6f5fa;
+    height: 100px;
+}
+ 
+.header  {
+    height: 90%; 
+    text-align: center; 
+    display: table;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+ 
+}
+ 
+.header h1 {
+    display:table-cell; vertical-align:middle;
+}
+ 
+h3 {
+    margin: 20px;
+}
+ul li {
+    list-style: none;
+}
+ul li :first-child {
+    
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
+}
+body .mytext {
+    width: 300px;
+}

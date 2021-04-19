@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> final pro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+ 
+  <div class="container my-container">
+ 
+           <div class="row">
+              <div class="header"><h1 class="text-center display-1">Task List</h1>
+              </div>
+           </div> 
+             
+            <div class="row">
+              <div class="col-md-8 text-left">
+                  <h2>Add New Task</h2>
+              </div>
+            </div>
+            
+            <!-- <div class="row">
+              <div class="col-md-8 text-left">
+                <h3>Task Name</h3>
+              </div>
+ 
+              <div class="row">
+                <form class= "col-6"> 
+                  <div class="input-group">
+                    <input type="task-name" class="form-control" id="task-name" placeholder="">
+                     <button type="submit" class="btn btn-primary">Submit</button> 
+                  </div>
+                </form>
+              </div>
+            </div>
+ 
+              
+            
+        
+            <div class="row ">
+              <div class="col-md-8 text-left">
+                  <h3>Task Description</h3>
+              </div>
+              
+              <div class="row">
+                <form class= "col-"> 
+                  <div class="input-group">
+                    <input type="task-name" class="form-control" id="task-description" placeholder="">
+                     <button type="submit" class="btn btn-primary">Submit</button> 
+                  </div>
+                </form>
+              </div>                                    
+            </div>
+ 
+            <div class="row">
+              <div class="col-8 text-left ">
+                  <h3>Task Name</h3>
+              </div>              
+            </div>
+            <div class="row">
+              <form class= "col-6 "> 
+                <div class="input-group">
+                  <input type="assigned-to" class="form-control" id="assigned-to" placeholder="">
+                   <button type="submit" class="btn btn-primary">Submit</button> 
+                </div>
+              </form>
+            </div>
+ 
+            <div class="row">
+              <div class="col-8 text-left ">
+                  <h3>Task Description</h3>
+              </div>
+            </div>
+            <div class="row">
+              <form class= "col-6 "> 
+                <div class="input-group">
+                  <input type="assigned-to" class="form-control" id="assigned-to" placeholder="">
+                   <button type="submit" class="btn btn-primary">Submit</button> 
+                </div>
+              </form>
+            </div>
+ 
+            <div class="row">
+              <div class="col-8 text-left ">
+                  <h3>Assigned To:</h3>
+              </div>
+ 
+              <div class="col-4 text-right">
+                <h3>Due Date</h3>
+                <div class="col-10 input-group ">
+                  <input type="date" class="form-control" id="due-date" name="submit-date" value="2021-04-18" min="2021-04-18" max="2021-04-30">
+                  <label for="due-date">Due Date</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <form class= "col-6 "> 
+                <div class="input-group">
+                  <input type="assigned-to" class="form-control" id="assigned-to" placeholder="">
+                   <button type="submit" class="btn btn-primary">Submit</button> 
+                </div>
+              </form>
+            </div> -->
+ 
+ 
+            <form class='form-horizontal'>
+              <div class="form-group">
+                  <label for="element1" class="col-sm-4 control-label"><h3>Task Name</h3></label>
+                  <div class="col-sm-6">
+                      <input type="text" class="form-control" id="element1" placeholder="Element 1">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="element2" class="col-sm-4 control-label"><h3>Task Description</h3></label>
+                  <div class="col-sm-6">
+                      <input type="text" class="form-control" id="element2" placeholder="Element 2">
+                  </div>
+              </div>
+              <div class="form-group justify-content-between">
+                    <div class="row">
+                      <div class="col">
+                        <label for="element3" class="col-sm-4 control-label text-left"><h3>Assigned To:</h3></label>
+                      </div>                      
+                      <div class="col-sm-3 text-right">
+                        <h3>Due Date</h3>
+                      </div>
+                    </div>
+                    
+                   <div class="row justify-content-between">
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="element3" placeholder="Element 3">
+                    </div>
+                  
+                    <div class="col-sm-3 ">
+                      <input type="date" class="form-control" id="due-date" name="submit-date" value="2021-04-18" min="2021-04-18" max="2030-04-30">
+                      <label for="due-date"></label>
+                    </div>     
+                   </div>                                   
+              </div>
+            </form>
+ 
+            <div class="form-group">
+              <div>
+                <label for="lunch"><h2>Tasks</h2></label>
+              </div>
+              <label for="lunch"></label>
+              <select id="lunch" name="lunch">
+                <option value="pizza">Task Name</option>
+                <option value="curry">Task Description</option>
+                <option value="salad">Assigned To</option>
+                <option value="ramen">Due date</option>
+                <option value="tacos">Status</option>
+              </select>
+            </div>
+ 
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+  </div>
+ 
+ 
+ 
+</body>
+</html>
