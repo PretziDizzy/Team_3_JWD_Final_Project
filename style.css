@@ -15,12 +15,12 @@ body {
     justify-content: center;
     margin:20px;
 }
-.header h1 {
+.header p {
     margin-top: 10px;
     font-family: Work Sans, sans-serif;
     font-weight: bold;
-    font-size: 42px;
-    background-color: #f6f5fa;
+    font-size: 2.5rem;
+    background-color: #c4c2ca;
     height: 100px;
 }
  
