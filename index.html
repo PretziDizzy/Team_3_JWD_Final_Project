@@ -9,7 +9,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Task List</h1>
+    <div> <header>
+        <h1>Task List</h1>
+        </header>
+      </div>
+      <br>
+      <br>
   <form>
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
@@ -24,7 +29,237 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Assigned to</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-md-6 col-lg-12 .justify-content-center">
+              <div class="card" style="width: 18rem;">
+                  <br>
+
+                  <form action="/action_page.php">
+                    <label for="birthday">Due Date:</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <input type="submit">
+                  </form>
+                  
+                  <p><strong>Note:</strong> Only works in Chrome.</p>
+              </div>
+            </div>  
+          </div>
+          <br>
+          <br>
+
+          
+
+
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>    
+
+  <br>
+  <br>
+
+
+
+
+
+  <!-- making a new form and trying it out Cleo-->
+<div class="container-fluid">
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<br>
+<br>
+<div class="Footer">
+</div>
+
+
+
+
+
+<div class="container">
+
+    <h1 class="text-center display-1">Tasks</h1>
+       
+        <div class="row">
+          <form class="col-8 mx-auto">
+              <div class="form-group">
+                  <input type="task-name" class="form-control" id="task-list" placeholder="task-name">
+              </div>
+          </form>
+        </div>
+
+        
+
+          <div class="row">
+            <form class="col-8 mx-auto">
+                <div class="form-group">
+                    <input type="task-name" class="form-control" id="task-list" placeholder="task-name">
+                </div>
+            </form>
+          </div>
+
+          
+
+        <div class="row">
+          <div class="col-md-12 ">
+              <h2>Add New Task</h2>
+          </div>
+          <div class="row">
+            <form class="col-8 mx-auto">
+                <div class="form-group">
+                    <input type="task-name" class="form-control" id="task-list" placeholder="task-name">
+                </div>
+            </form>
+          </div>
+        </div>
+
+        
+      
+                <div class="row">
+          <div class="col-md-12">
+                  <h3>Task Description</h3>
+          </div> 
+          <div class="row">
+            <form class="col-8 mx-auto">
+                <div class="form-group">
+                    <input type="task-name" class="form-control" id="task-list" placeholder="task-name">
+                </div>
+            </form>
+          </div>                                   
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 ">
+            <div class="item-2">
+              <h2>Assigned To</h2>
+            </div>
+            <div class="row">
+                <form class="col-8 mx-auto">
+                    <div class="form-group">
+                        <input type="task-name" class="form-control" id="task-list" placeholder="task-name">
+                    </div>
+                </form>
+              </div>                  
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <br>
+    <br>
+    <!--Dropdown below for status-->
+
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Task 1</div>
+      <div class="card-body">
+        <h5 class="card-title">Task 1 Description</h5>
+        <p class="card-text">Esubalew Dessalegn</p>
+        <span>Due Date: Apr 20 - 2021</span>
+        <br>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" 
+          aria-expanded="false">
+            Status
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">In Progress</button>
+            <button class="dropdown-item" type="button">Pending</button>
+            <button class="dropdown-item" type="button">Done</button>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Delete</button>
+      </div>
+    </div>
+    <!--check the code for status button above-->
+    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Task 2</div>
+      <div class="card-body">
+        <h5 class="card-title">Task 2 Description</h5>
+        <p class="card-text">Esubalew Dessalegn</p>
+        <span>Due Date: Apr 20 - 2021</span>
+        <br>
+        <button type="button" class="btn btn-primary btn-sm">Done</button>
+        <button class="btn btn-primary" type="submit">Delete</button>
+      </div>
+    </div>
+    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+      <div class="card-header">Task 3</div>
+      <div class="card-body">
+        <h5 class="card-title">Task 3 Description</h5>
+        <p class="card-text">Esubalew Dessalegn</p>
+        <span>Due Date: Apr 20 - 2021</span>
+        <br>
+        <button type="button" class="btn btn-primary btn-sm">Pending</button>
+        <button class="btn btn-primary" type="submit">Delete</button>
+      </div>
+    </div>
+    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+      <div class="card-header">Task 4</div>
+      <div class="card-body">
+        <h5 class="card-title">Task 4 Description</h5>
+        <p class="card-text">Esubalew Dessalegn</p>
+        <span>Due Date: Apr 20 - 2021</span>
+        <br>
+        <button type="button" class="btn btn-primary btn-sm">Done</button>
+        <button class="btn btn-primary" type="submit">Delete</button>
+      </div>
+    </div>
+    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+      <div class="card-header">Task 5</div>
+      <div class="card-body">
+        <h5 class="card-title">Task 5 Description</h5>
+        <p class="card-text">Esubalew Dessalegn</p>
+        <span>Due Date: Apr 20 - 2021</span>
+        <br>
+        <button type="button" class="btn btn-primary btn-sm">In Progress</button>
+        <button class="btn btn-primary" type="submit">Delete</button>
+      </div>
+    </div>
+    </div>
+
+    <!--<ul class="list-group">
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+    
+      
+      <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+      <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+      <li class="list-group-item list-group-item-success">A simple success list group item</li>
+      <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+      <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+      <li class="list-group-item list-group-item-info">A simple info list group item</li>
+      <li class="list-group-item list-group-item-light">A simple light list group item</li>
+      <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+    </ul>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5>Task 1</h5>
+        <p class="card-title">Task Description</p>
+        <p class="card-text">Sarah</p>
+        <span>Due Date: Apr 19 - 2021</span>
+        <button type="button" class="btn btn-primary btn-sm">In progress</button>
+        <button type="button" class="btn btn-primary">Delete</button>
+      </div>
+    </div> -->
+
+
 </body>
 </html>
