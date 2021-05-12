@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="">
         <title></title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">           
+        <link rel="stylesheet" href="style.css"> 
+        <script src= app.js defer></script>.          
     </head>
     <body>
  
@@ -18,66 +19,31 @@
                 <div class="header">
                     <p class="text-center">Task List</p>
                 </div>
-                <!-- <form>
-                    <div class="form-group col-sm-6">
-                      <label for="formGroupExampleInput">Task Name</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="taskName">
-                    </div>
-                    <div class="form-group col-sm-6">
-                      <label for="formGroupExampleInput2">Task Description</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="taskDescription">
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <label for="formGroupExampleInput2">Assigned To:</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="assignedTo">
-                    </div>
-                    <div class="col-sm-3 ">
-                      <input type="date" class="form-control" id="due-date" name="submit-date" value="2021-04-18" min="2021-04-18" max="2030-04-30">
-                      <label for="due-date"></label>
-                    </div>
-                    <div class="form-group">
-                      <div>
-                        <label for="lunch"><h2>Tasks</h2></label>
-                      </div>
-                      <label for="lunch"></label>
-                      <select id="lunch" name="lunch">
-                        <option value="taskName">Task Name</option>
-                        <option value="taskDescription">Task Description</option>
-                        <option value="assignedTo">Assigned To</option>
-                        <option value="duedate">Due date</option>
-                        <option value="status">Status</option>
-                      </select>
-                    </div>
-                </form> -->
                 <div>
                   <h2>New Task</h2>
                 </div>
-                <form>
-                  <div class="form-group">
+                <form id = 'cardForm'>
+                  <div class="form-group" id= "nameForm">
                     <label for="inputAddress">Name</label>
                     <input type="text" class="form-control" id="inputAddress" placeholder="">
                   </div>
-                  <div class="form-group">
+                  <div class="form-group" id= "descriptionForm">
                     <label for="inputAddress2">Description</label>
                     <input type="text" class="form-control" id="inputAddress2" placeholder="">
                   </div>
                   
-                  <div class="form-row">
+                  <div class="form-row" id= "assignedForm">
                     <div class="form-group col-md-6">
                       <label for="inputEmail4">Assigned To:</label>
                       <input type="email" class="form-control" id="inputEmail4">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6" id= "dueDateForm">
                       <label for="calendar">Due Date</label>
                       <input type="date" class="form-control" id="calendar" value="2021-04-18"  min="2021-04-18" max="2030-04-50">
                     </div>
-                    <!--<form action="/action_page.php">
-                      <label for="birthday">Birthday:</label>
-                      <input type="date" id="birthday" name="birthday">
-                      <input type="submit">
-                    </form>
-                    
-                    <p><strong>Note:</strong> Only works in Chrome.</p>-->
+                    <div class="alert alert-danger" role="alert">
+                      Please enter email!
+                    </div>
                   </div>
  
                   <div class="form-group">
@@ -92,118 +58,6 @@
                 </form>
                 <br>
                 <br>
-
-                <!--<div class="form-group">
-                  <div>
-                    <label for="lunch"><h2>Tasks</h2></label>
-                  </div>
-                  <label for="lunch"></label>
-                  <select id="lunch" name="lunch">
-                    <option value="taskName">Task Name</option>
-                    <option value="taskDescription">Task Description</option>
-                    <option value="assignedTo">Assigned To</option>
-                    <option value="duedate">Due date</option>
-                    <option value="status">Status</option>
-                  </select>
-                </div>
- 
-                 <div class="card" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Task 1</h5>
-                    <h6 class="card-subtitle">Complete Project</h6>
-                    <p class="card-text">It's important this project be completed at the end of next week.</p>
-                    <div>
-                      <span>Esubalew Dessalegn</span>                      
-                    </div>
-                    <div>
-                      <span>Due Date: Apr 24-2021</span>                      
-                    </div>                    
-                    <button type="button" class="btn btn-primary btn-sm">IN PROGRESS</button>
-                    <button class="btn btn-primary" type="submit">Delete</button>
-                  </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Task 2</h5>
-                    <h6 class="card-subtitle">Go Shopping</h6>
-                    <p class="card-text">We need some groceries.</p>
-                    <div>
-                      <span>Sarah</span>                      
-                    </div>
-                    <div>
-                      <span>Due Date: Apr 19-2021</span>                      
-                    </div>                    
-                    <button type="button" class="btn btn-primary btn-sm">DONE</button>
-                    <button class="btn btn-primary" type="submit">Delete</button>
-                  </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Task 1</h5>
-                    <h6 class="card-subtitle">Complete Project</h6>
-                    <p class="card-text">It's important this project be completed at the end of next week.</p>
-                    <div>
-                      <span>Esubalew Dessalegn</span>                      
-                    </div>
-                    <div>
-                      <span>Due Date: Apr 24-2021</span>                      
-                    </div>                    
-                    <button type="button" class="btn btn-primary btn-sm">IN PROGRESS</button>
-                    <button class="btn btn-primary" type="submit">Delete</button>
-                  </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Task 1</h5>
-                    <h6 class="card-subtitle">Complete Project</h6>
-                    <p class="card-text">It's important this project be completed at the end of next week.</p>
-                    <div>
-                      <span>Esubalew Dessalegn</span>                      
-                    </div>
-                    <div>
-                      <span>Due Date: Apr 24-2021</span>                      
-                    </div>                    
-                    <button type="button" class="btn btn-primary btn-sm">IN PROGRESS</button>
-                    <button class="btn btn-primary" type="submit">Delete</button>
-                  </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Task 1</h5>
-                    <h6 class="card-subtitle">Complete Project</h6>
-                    <p class="card-text">It's important this project be completed at the end of next week.</p>
-                    <div>
-                      <span>Esubalew Dessalegn</span>                      
-                    </div>
-                    <div>
-                      <span>Due Date: Apr 24-2021</span>                      
-                    </div>                    
-                    <button type="button" class="btn btn-primary btn-sm">IN PROGRESS</button>
-                    <button class="btn btn-primary" type="submit">Delete</button>
-                  </div>
-                </div>-->
- 
-                <!--<div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button">Done</button>
-                    <button class="dropdown-item" type="button">Pending</button>
-                    <button class="dropdown-item" type="button">In Progress</button>
-                  </div>
-                </div>
-          </div> 
-        </div>-->
         
         <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
